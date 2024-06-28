@@ -8,8 +8,8 @@ function calculateArea() {
 //parsefloat(...) converts string into floating-point number
     let area = length * width;
 
-    document.getElementById('result').innerText= 'The area of the rectangle is: ${area}';
-// .innerText changes the text content of the accessed element
-// $(xyz) contains lets a js variable into a string
+    document.getElementById('result').innerText= `The area of the rectangle is: ${area}`;
 }
-
+// DO NOT USE QUOTES('), instead use backticks(`) present on the top-left corner
+// .innerText changes the text content of the accessed element
+// $(xyz) contains lets a js variable into a str
