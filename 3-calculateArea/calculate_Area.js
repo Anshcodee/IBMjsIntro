@@ -1,3 +1,5 @@
+/*Defining variables and function to calculate area*/
+
 let length;
 let width;
 
