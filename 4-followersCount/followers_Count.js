@@ -1,3 +1,8 @@
+/*In this lab, you will create a functional follower counter for an Instagram post and simulate the increase in followers. 
+You will grasp the fundamentals of managing a count variable to simulate a follower count on a social media platform like Instagram. 
+You will understand the basic principles of managing state (the follower count),
+updating UI elements dynamically, and triggering actions based on certain conditions in JavaScript.
+*/
 let count = 0;
 
 function increaseCount() {
