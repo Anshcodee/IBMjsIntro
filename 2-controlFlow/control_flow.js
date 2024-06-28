@@ -1,3 +1,6 @@
+/*In this lab, you will delve into the fundamental concept of control flow and conditional statements in JavaScript. Through hands-on implementation, you will grasp the essence of if…else statements, nested statements, and switch statements, understanding how these structures enable code execution based on specific conditions. You will gain insight into how altering these elements impacts the program's flow and output.
+
+*/
 let userRole = "admin";
 let accessLevel;
 
