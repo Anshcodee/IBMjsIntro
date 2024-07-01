@@ -12,7 +12,7 @@
 <!Placeholder allows for sample texxt to appear when nothing has beein inputted in a box>
     <label for= "age">Age:</label><br>
     <input type="number" id="age" placeholder="Your Age" required><br><br>
-    
+<!required means that if this field is not filled, submit button will not work>
     <label for="email">Email:</label><br>
     <input type="email" id="email" placeholder="Your Email" required><br><br>
 
@@ -24,12 +24,13 @@
     <hr>
     <label for="productType">Product Type:</label><br>
     <select id="ProductType" required>
-        <option value="perfume" required>Perfume</option>
-        <option value="cream" required>Cream</option>
-        <option value="oil" required>Oils</option>
+        <option value="perfume">Perfume</option>
+        <option value="cream">Cream</option>
+        <option value="oil">Oils</option>
     </select></br><br>
     <label for="feedbackText">Feedback:</label><br>
     <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your feedback here:" required></textarea></br>
+    <button id-"submitButon">Submit Feedback</button>
     <hr>
     <div id="userInfo" style="display: none;">
         <h2>User Info:</h1>
