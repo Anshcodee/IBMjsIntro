@@ -6,7 +6,18 @@ const designation = document.getElementById('designation').value;
 const feedback = document.getElementById('feedbackText').value;
 const submitButton=document.getElementById('submitBtn');
 
-submitButton.onclick = () =>{
+function submitFeedback(){
     const productType = document.getElementById('productType').value;
-    alert('Thank you for your valuable feedback.')
+    alert('Thank you for your valuable feedback.');
 }
+
+submitButton.onclick = () =>{
+    submitFeedback();
+}
+
+document.addEventListener('keydown', function(event) {
+   if (event.key === 'Enter') {
+     submitFeedback();
+   }
+ });
+ 
