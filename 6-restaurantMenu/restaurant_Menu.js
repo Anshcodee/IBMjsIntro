@@ -5,3 +5,6 @@ const breakfastMenu = ['Pancakes', 'Eggs Benedict', 'Oatmeal', 'Frittata'];
 const mainCourseMenu = ['Steak','Pasta','Burger','Salmon'];
 const dessertMenu = ['Cake', 'Ice Cream', 'Pudding', 'Fruit Salad'];
 
+// We will use both the 'map method' and 'forEach method' here
+// 'map' method for breakfast
+
