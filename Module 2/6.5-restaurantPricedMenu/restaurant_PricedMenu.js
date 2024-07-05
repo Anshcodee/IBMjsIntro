@@ -15,9 +15,9 @@ document.getElementById('breakfastMenuItems').innerHTML = breakfastMenuItems_HTM
 
 let mainCourseMenuItems_HTML = '';
 mainCourseMenu.forEach((item,index) => {
-    mainCourseMenuItems_HTML += `<p>--> Item ${index+1}: ${item}`;
+mainCourseMenuItems_HTML += `<p>--> Item ${index+1}: ${item}</p>`;
 });
-document.getElementById('mainCourseMenuItems').innerHTML = mainCourseMenuItems_HTML;
+document.getElementById('maincourseMenuItems').innerHTML = mainCourseMenuItems_HTML;
 
 // forEach adds to an already existing variable. One by one
 
