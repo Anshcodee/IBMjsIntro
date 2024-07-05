@@ -28,3 +28,13 @@ document.getElementById('maincourseMenuItems').innerHTML = mainCourseItem;
 //      which will insert main course menu items into the specific element within the webpage.
 
 // 'for loop' will be used to iterate dessertMenu
+
+let dessertItem = '';
+for (let i = 0; i< dessertMenu.length; i++){
+    dessertItem +=`<p>Item ${i+1}: ${dessertMenu[i]}</p>`;}
+document.getElementById('dessertMenuItems').innerHTML = dessertItem;
+
+// The for loop iterates through the dessertMenu array, starting from index 0 and continuing until reaching the length of the array. 
+//      For each iteration, an HTML string is created using the current item in the dessertMenu array, including the item's content and its index (i + 1).
+// The generated HTML content, composed of individual paragraphs <p> containing dessert menu items with their respective indices, 
+//      is assigned to the inner HTML of the HTML element identified by the ID dessertMenuItems which will insert the dessert menu items into the specific element within the webpage.
