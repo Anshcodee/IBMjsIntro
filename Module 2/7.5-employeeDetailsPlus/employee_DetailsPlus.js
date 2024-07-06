@@ -26,7 +26,7 @@ function displayHREmployees(){
 function findEmployeeById(eid){
     const reqdEmployee = employees.find((empl) => empl.id === eid);
     if (reqdEmployee){
-        document.getElementById('employeeDetails').innerHTML = `<p>${employees.id}: ${employees.name}: ${employees.department}: ${employees.specialization}</p>`;
+        document.getElementById('employeeDetails').innerHTML = `<p>${reqdEmployee.id}: ${reqdEmployee.name}: ${reqdEmployee.department}: ${reqdEmployee.specialization}</p>`;
     } else{
         document.getElementById('employeeDetails').innerHTML = `Required employee wasn't found`;
     }
@@ -35,7 +35,7 @@ function findEmployeeById(eid){
 function findEmployeeBySpecialization(){
     const reqdEmployee = employees.find((em) => em.specialization === 'Javascript');
     if (reqdEmployee){
-        document.getElementById('employeeDetails').innerHTML = `<p>${employees.id}: ${employees.name}: ${employees.department}: ${employees.specialization}</p>`;
+        document.getElementById('employeeDetails').innerHTML = `<p>${reqdEmployee.id}: ${reqdEmployee.name}: ${reqdEmployee.department}: ${reqdEmployee.specialization}</p>`;
     } else{
         document.getElementById('employeeDetails').innerHTML = `Required employee wasn't found`;
     }
