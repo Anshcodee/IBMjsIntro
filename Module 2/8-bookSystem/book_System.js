@@ -29,10 +29,10 @@ function showbooks(){
     document.getElementById('books').innerHTML = booksShowing.join('oof');
 }
 
- function clearInputs() {
+function clearInputs() {
             document.getElementById('bookName').value = '';
             document.getElementById('authorName').value = '';
             document.getElementById('bookDescription').value = '';
             document.getElementById('pagesNumber').value = '';
  }
- // Note: Clearing out the HTML input for fresh input later and to clear up what's showing on the screen ig
+ // Note: Clearing out the HTML input for fresh input later AND to clear up the input showing up on the screen
