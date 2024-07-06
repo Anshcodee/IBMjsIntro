@@ -41,14 +41,14 @@ function endTest(){
     var wpm = 0; //A default value
 
     if(timeElapsed!==0 && !isNaN(typedwords)){
-        wpm = Math.round((typedWords/timeElapsed)*60);
+        wpm = Math.round((typedwords/timeElapsed)*60);
     }
 
     // Display result
     var outputDiv = document.getElementById("output");
     outputDiv.innerHTML = "<h2>Typing Test results: </h2><hr><br>"+
     "<p> Words Typed: "+ typedwords + "</p>"+
-    "<p>Time Elapsed: "+timeElapsed.toFixed(2)+"seconds</p>"
+    "<p>Time Elapsed: "+timeElapsed.toFixed(2)+"seconds</p>"+
     //toFixed(x) gives a decimal value having x decimal digits
     "<p>Words per Minute(WPM): "+ wpm +"</p>";
 
