@@ -21,13 +21,13 @@ function addBook(){
 }
 
 function showbooks(){
-    const booksShowing = books.map((book, index) => `<h1>book Number: ${index+1}</h1>
+    const booksShowing = books.map((book, index) => `<h1>Book Number: ${index+1}</h1>
     <p><strong>Book Name: </strong>${book.name}</p>
     <p><strong>Author Name: </strong>${book.authorName}</p>
     <p><strong>Book Description: </strong>${book.Description}</p>
     <p><strong>No. of pages in the book: </strong>${book.pageNumber}</p>
-    `);
-    document.getElementById('books').innerHTML = booksShowing.join('oof');
+    <button onclick="deleteBook(${index})">Delete Book</button>`);
+    document.getElementById('books').innerHTML = booksShowing.join('');
 }
 
 function clearInputs() {
@@ -37,3 +37,9 @@ function clearInputs() {
             document.getElementById('pagesNumber').value = '';
  }
  // Note: Clearing out the HTML input for fresh input later AND to clear up the input showing up on the screen
+
+ function deleteBook(index){
+    books.splice(0,1);
+    showbooks();
+    alert(`Book number ${index} has been removed.`)
+}
